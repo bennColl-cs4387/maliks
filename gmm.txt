@@ -1,0 +1,101 @@
+$ cat residents.txt | grep "Lyndon"
+Lyndon Huskupper        73 Tamworth Drive
+$ cat residents.txt | grep "Cosmo"
+Cosmo Siwkonk   26 Balcombe Close
+
+
+
+$ git tag -l | grep "tamworth"
+street/tamworth_drive
+$ git tag -l | grep "balcombe"
+street/balcombe_close
+$ git tag -l | grep "beaconside"
+street/beaconside
+
+$ cat investigate 
+22f733298423b814f1da31bee3e0063c72ed6e71
+$ git cat-file -p 22f733298423b814f1da31bee3e0063c72ed6e71
+"There's no one answering the door. Obviously you won't break in because you don't have a warrant or
+anything. But nothing's wrong with looking around the place...
+
+You check around the house, there's no car. Not even a driveway. You do find a bike resting against
+the fence. It's pretty close to the factory, so makes sense the suspect bikes to work.
+
+Just to make sure, you ask some of the neighbors, they confirm that the suspect doesn't own a car.
+One of them says he doesn't even have a license.
+
+Another neighbor says he saw the suspect coming back from work on the day of the murder at about
+5PM, they chatted for a bit before his sister picked him up to visit their parents. They live pretty
+far away, so that places him away from Git Town at the time of the murder."
+
+
+$ git checkout street/balcombe_close
+$ git log | grep -5 "26 "
+commit bc6870d8093a33d9a69acc94a1cda16ee2d7195d
+Author: Dolores Wholfump <mayor@gittown.gov>
+Date:   Tue Jan 1 00:00:00 2019 +0000
+"
+    26 Balcombe Close
+    
+    No one's home...
+    
+    You can take a look around though.
+"
+$ git checkout bc6870d8093a33d9a69acc94a1cda16ee2d7195d
+HEAD is now at bc6870d 26 Balcombe Close
+$ cat investigate 
+c8411c73e49372dbdb644beef2ea841b403fc476
+$ git cat-file -p c8411c73e49372dbdb644beef2ea841b403fc476 
+"Nobody's home. From the stack of letters in the mailbox nobody's been here for a good few days.
+
+Without a warrant you can't get into the house, but you can still checkout the area. Maybe talk with
+some of the neighbors.
+
+The guy next door says he barely ever spoke to the suspect, "was a bit of a loner" is what he says.
+Doesn't know what type of vehicle he drives.
+
+You take a stroll around the house, there's a back porch that probably seen better days. You spot a
+driveway next to it leading to a garage. The door's open and you see a green Hyundai parked there."
+
+
+$ git checkout street/beaconside
+HEAD is now at 5e37024 Beaconside
+$ git log | grep -B 4 -A 21 " 9 "
+commit 92f6e05c6aa06c791f402d7e19649fa1f0ec76c6
+Author: Dolores Wholfump <mayor@gittown.gov>
+Date:   Tue Jan 1 00:00:00 2019 +0000
+"
+    9 Beaconside
+    
+    Yeah, of course I used the backdoor to the factory, that's the closest entrance to the freezer and I
+    brought in some ingrediants that can't really stand the heat.
+    
+    At the time of the murder I was at a block party right down the street from here, we threw the party
+    for one of the neighbors who got back from the hospital after an accident. I was with my kids. You
+    can ask anyone who's been there.
+    
+    Oh wait, you know what? We took a picture... Let me get my phone.
+    
+    See? That's me, that's the neighbor, here's my little girl. And you see the timestamp?
+    
+    So yeah, I really don't have anything to do with that... Barely knew the victim...
+    
+    But you know what? I did see someone rushing out of the factory... He got into a green Hyundai, you
+    don't see many of those around here... Probably a rental. I didn't catch his face, was just weird
+    seeing someone running off like that... Come to think about it, maybe that person had something to
+    do with it?
+    
+    Anyways, best of luck catching whoever did it!
+"
+$ git checkout 92f6e05c6aa06c791f402d7e19649fa1f0ec76c6
+Previous HEAD position was 5e37024 Beaconside
+HEAD is now at 92f6e05 9 Beaconside
+$ cat investigate
+d1278ebc164050fe1e5526fbba6a8cfbe763f1d2
+$ git cat-file -p d1278ebc164050fe1e5526fbba6a8cfbe763f1d2
+You ask around with the neighbors, just to make sure. Everyone you ask verify that suspect's alibi.
+
+
+
+$ echo "Cosmo Siwkonk" | git hash-object --stdin | grep -iq -f /dev/stdin <(git show solution) && echo 'You found the murderer!' || echo 'No cigar, chief... Try again.'
+You found the murderer!
