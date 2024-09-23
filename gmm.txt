@@ -1,3 +1,7 @@
+
+$ git checkout gtpd-archive
+$ git log
+
 $ cat residents.txt | grep "Lyndon"
 Lyndon Huskupper        73 Tamworth Drive
 $ cat residents.txt | grep "Cosmo"
