@@ -79,7 +79,7 @@ git log --grep="47 Elm Road"
 
 Morgan was seen in the area. There was also a blue Toyota. Checking the solution.
 
-### Step 7: Confirming the Culprit
+### Step 7: Making sure Harper is not the culprit
 
 ```bash
 echo "Harper Wint" | git hash-object --stdin | grep -iq -f /dev/stdin <(git show solution) && echo 'Case closed!' || echo 'Not quite, keep looking...'
