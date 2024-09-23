@@ -1,7 +1,7 @@
 
 # Investigation Log
 
-### Looking at evidencen at gtpd branch
+### Looking at evidence at gtpd branch
 
 ```bash
 git checkout gtpd-archive
