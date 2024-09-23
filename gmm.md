@@ -7,7 +7,7 @@
 git checkout gtpd-archive
 ```
 
-### Shows log of commits as per date
+### Shows log of commits
 
 ```bash
 git log --graph --pretty=format:"%C(red)%h%x09%Creset%C(blue)%C(bold)%ad%Creset %C(red)%cn%Creset  %C(green)%Creset %s" --date=iso
@@ -79,11 +79,9 @@ git log --grep="47 Elm Road"
 
 Morgan was seen in the area. There was also a blue Toyota. Checking the solution.
 
-### Step 7: Making sure Harper is not the culprit
+### Step 7: Now checking beaconside
 
-```bash
-echo "Harper Wint" | git hash-object --stdin | grep -iq -f /dev/stdin <(git show solution) && echo 'Case closed!' || echo 'Not quite, keep looking...'
-```
+git checkout street/beaconside
 
 Result: Case closed!
 ```bash
