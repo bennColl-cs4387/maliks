@@ -1,7 +1,7 @@
 # Open Source Contributions
 
-This document provides an overview of my contributions to three 
-open-source projects: **Ethpreneur**, **Fast Music Remover**, and 
+This document provides an overview of three 
+open-source projects I'm interested in : **Ethpreneur**, **Fast Music Remover**, and 
 **Seata**. Below are the descriptions of these projects and the tasks I 
 will be working on.
 
@@ -14,18 +14,6 @@ using Next.js, TypeScript, and Thirdweb, providing a secure and
 user-friendly interface for decentralized ownership and trading of company 
 shares.
 
-### Key Features:
-- 🏢 **Company Listings**: Decentralized companies listed and represented 
-as NFTs.
-- 💼 **NFT Stocks**: Trade company shares as NFTs.
-- 🔐 **Wallet Authentication**: Secure login via crypto wallets like 
-MetaMask.
-- 📊 **Dashboard for Company Owners**: Manage company performance, issue 
-new shares, and track ownership.
-- 💻 **Cross-chain Support**: Supports multiple blockchain networks for 
-seamless transactions.
-- 🎨 **Dark Mode**: Toggle between light and dark themes for a 
-personalized user experience.
 
 ### My Contribution: Dark Mode Implementation
 - **Task**: Implement a dark mode feature to enhance the user experience 
@@ -50,17 +38,7 @@ Link](https://github.com/SpandanM110/Ethpreneur/issues/9#event-14445753676)
 Fast Music Remover aims to provide a fast and lightweight tool for 
 removing music, sound effects, and noise from any media. Currently, it 
 supports offline processing but aims to support live feeds in the future. 
-The project is known for its near-realtime processing capability, making 
-it efficient for a variety of use cases such as interview editing, social 
-media content preparation, and more.
 
-### Key Features:
-- 🚀 **Fast Processing**: Processes media at 8% of its original length, 
-making it highly efficient.
-- 🎧 **Noise Removal**: Designed to remove background music, sound 
-effects, and other noise while preserving voice tracks.
-- 🌐 **Offline Media Processing**: Focused on offline analysis but has 
-future plans for live feed support.
 
 ### My Contribution: Command-Line Interface (CLI)
 - **Task**: Implement a basic CLI for Fast Music Remover that will allow 
@@ -89,12 +67,6 @@ user-friendly transaction management system. Seata helps to coordinate
 transactions across multiple microservices to maintain consistency in case 
 of failures or distributed database issues.
 
-### Key Features:
-- **Distributed Transaction Management**: Provides a solution to the 
-problem of managing distributed transactions across microservices.
-- **High Performance**: Optimized for speed and scalability.
-- **Extensible Architecture**: Designed to be easily extended for various 
-use cases.
 
 ### My Contribution: Issue Resolution for Concurrent Modification 
 Exception
