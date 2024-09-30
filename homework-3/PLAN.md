@@ -4,27 +4,12 @@ The three open-source projects which I'm interested in: **Ethpreneur**, **Fast M
 **Seata**. Below are the descriptions of these projects and the tasks I 
 will be working on.
 
-## 1. Ethpreneur 🌐
-
 **Project Overview**  
 Ethpreneur is a decentralized platform for listing companies as NFTs and 
 enabling users to trade company stocks as digital assets. It is built 
 using Next.js, TypeScript, and Thirdweb, providing a secure and 
 user-friendly interface for decentralized ownership and trading of company 
 shares.
-
-### Key Features:
-- 🏢 **Company Listings**: Decentralized companies listed and represented 
-as NFTs.
-- 💼 **NFT Stocks**: Trade company shares as NFTs.
-- 🔐 **Wallet Authentication**: Secure login via crypto wallets like 
-MetaMask.
-- 📊 **Dashboard for Company Owners**: Manage company performance, issue 
-new shares, and track ownership.
-- 💻 **Cross-chain Support**: Supports multiple blockchain networks for 
-seamless transactions.
-- 🎨 **Dark Mode**: Toggle between light and dark themes for a 
-personalized user experience.
 
 ### My Contribution: Dark Mode Implementation
 - **Task**: Implement a dark mode feature to enhance the user experience 
@@ -53,13 +38,6 @@ The project is known for its near-realtime processing capability, making
 it efficient for a variety of use cases such as interview editing, social 
 media content preparation, and more.
 
-### Key Features:
-- 🚀 **Fast Processing**: Processes media at 8% of its original length, 
-making it highly efficient.
-- 🎧 **Noise Removal**: Designed to remove background music, sound 
-effects, and other noise while preserving voice tracks.
-- 🌐 **Offline Media Processing**: Focused on offline analysis but has 
-future plans for live feed support.
 
 ### My Contribution: Command-Line Interface (CLI)
 - **Task**: Implement a basic CLI for Fast Music Remover that will allow 
