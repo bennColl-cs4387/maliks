@@ -1,7 +1,6 @@
 # Open Source Contributions
 
-This document provides an overview of my contributions to three 
-open-source projects: **Ethpreneur**, **Fast Music Remover**, and 
+The three open-source projects which I'm interested in: **Ethpreneur**, **Fast Music Remover**, and 
 **Seata**. Below are the descriptions of these projects and the tasks I 
 will be working on.
 
