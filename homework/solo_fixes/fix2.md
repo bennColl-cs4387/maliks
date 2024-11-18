@@ -2,7 +2,7 @@
 
 ## Repo Description
 
-TEN Agent is a multimodal agent that leverages the OpenAI Realtime API to provide real-time interactions across various modalities. It integrates features such as weather checks, web search, and vision capabilities, enhancing user experience through dynamic and responsive functionalities.
+[TEN Agent](https://github.com/TEN-framework/TEN-Agent/) is a multimodal agent that leverages the OpenAI Realtime API to provide real-time interactions across various modalities. It integrates features such as weather checks, web search, and vision capabilities, enhancing user experience through dynamic and responsive functionalities.
 
 ## Issue Overview
 The issue was identified in the user interface of the TEN Agent, where the icon representing "You" was displayed as the letter "U." This was reported in issue #407 by user @cyfyifanchen.
