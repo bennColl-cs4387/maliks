@@ -9,7 +9,7 @@ I tried changing the fallback text in the `AvatarFallback` to null or an empty s
 
 ## Debugging:
 
-I then went ahead and added few debug statement to understand the behavior of data types. ![debug](https://ibb.co/9YV64qL). Here it shows an arbitrary number for user unique id so i decided to look into this enum.
+I then went ahead and added few debug statement to understand the behavior of data types. [debug](https://ibb.co/9YV64qL). Here it shows an arbitrary number for user unique id so i decided to look into this enum.
 
 I checked the `uid` in the message data, which looked like this:
 ```ts
