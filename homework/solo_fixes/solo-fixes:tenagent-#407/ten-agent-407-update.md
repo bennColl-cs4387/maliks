@@ -2,7 +2,11 @@
 
 Here is the issue: [Unfriendly Icon Representation - Issue #407](https://github.com/TEN-framework/TEN-Agent/issues/407)
 ## Problem:
-the issue where a "U" (for User) was  shown in the avatar fallback, even when I tried to remove it. I needed a way to show avatars only for specific messages.
+
+Setting up the environment for this project was quite a challenge. Initially, I faced multiple hurdles, such as signing up with different API platforms and configuring various databases to get the frontend functioning. 
+
+
+The issue was that the frontend was rendering U for user messages  which was very user friendly and the developers were unaware where ite was coming from.
 
 ## First Try:
 I tried changing the fallback text in the `AvatarFallback` to null or an empty string (""), assuming this would prevent the fallback text ("U") from showing. However, this approach didn’t work because fallback was still being triggered by the Redux state and Avatar component was automatically using "U" as the fallback for any messages from the user, which was not the intended behavior.
