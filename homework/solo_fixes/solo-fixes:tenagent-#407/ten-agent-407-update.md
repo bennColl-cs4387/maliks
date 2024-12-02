@@ -9,7 +9,7 @@ Setting up the environment for this project was quite a challenge. Initially, I 
 The issue was that the frontend was rendering U for user messages  which was very user friendly and the developers were unaware where ite was coming from.
 
 ## First Try:
-I tried changing the fallback text in the `AvatarFallback` to null or an empty string (""), assuming this would prevent the fallback text ("U") from showing. However, this approach didn’t work because fallback was still being triggered by the Redux state and Avatar component was automatically using "U" as the fallback for any messages from the user, which was not the intended behavior.
+I tried changing the fallback text in the `AvatarFallback` to null or an empty string (""), assuming this would prevent the fallback text ("U") from showing. However, this approach didn’t work because fallback was still being triggered by the Redux state
 
 ## Debugging:
 
