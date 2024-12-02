@@ -34,7 +34,7 @@ const isAgent = data.uid === "0" // agent's uid is "0"
           <AvatarFallback>AG</AvatarFallback>
         </Avatar>
       ) : (
-        <div className="w-10 h-10" /> // Empty space for the user (no avatar)
+        <div className="w-10 h-10" /> // no avatar
       )}
 
       {/* Message content */}
