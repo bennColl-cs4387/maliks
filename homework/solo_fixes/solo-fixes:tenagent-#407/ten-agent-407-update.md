@@ -41,4 +41,7 @@ const isAgent = data.uid === "0" // agent's uid is "0"
   )
 }
 ```
+
+[testing it locally](https://ibb.co/bNjZCdJ)
+
 I'll make a pull request for this fix soon by following the instructions in the [README](https://github.com/TEN-framework/TEN-Agent/blob/main/README.md)
