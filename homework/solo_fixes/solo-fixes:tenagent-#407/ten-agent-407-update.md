@@ -11,16 +11,7 @@ I tried changing the fallback text in the `AvatarFallback` to null or an empty s
 
 I then went ahead and added few debug statement to understand the behavior of data types. In chrome frontend, i was able to understand see user id as a data type which is [this]([https://ibb.co/9YV64qL](https://ibb.co/nLMqjqf)). Here it 0 as an agent id
 
-I checked the `uid` in the message data, which looked like this:
-```ts
-export interface ITextItem {
-  uid: string;
-  text: string;
-  time: number;
-  isFinal: boolean;
-}
-```
-I then went ahead, and assigned '1' to Agent as user id and added a conditional check in the `AvatarFallback` to show the avatar only if the `uid` is '0'. Making sure the avatar is shown only for Agent messages and not for User messages.
+As Agent  user id was default as 0, and added a conditional check in the `AvatarFallback` to show the avatar only if the `uid` is '0'. Making sure the avatar is shown only for Agent messages and not for User messages.
 
 Here is the code for the fix:
 
