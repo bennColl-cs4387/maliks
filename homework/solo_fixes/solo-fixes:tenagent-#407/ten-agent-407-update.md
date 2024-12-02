@@ -1,13 +1,16 @@
-# Fixing Avatar Issue in Messages
+# Fixing Avatar Bug
 
 Here is the issue: [Unfriendly Icon Representation - Issue #407](https://github.com/TEN-framework/TEN-Agent/issues/407)
 ## Problem:
 the issue where a "U" (for User) was  shown in the avatar fallback, even when I tried to remove it. I needed a way to show avatars only for specific messages.
 
 ## First Try:
-I tried changing the fallback text in the `AvatarFallback` to `null` or an empty string, but it still showed the "U" in the avatar. The fallback was being triggered from Redux, so this didn’t work.
+I tried changing the fallback text in the `AvatarFallback` to null or an empty string (""), assuming this would prevent the fallback text ("U") from showing. However, this approach didn’t work because fallback was still being triggered by the Redux state and Avatar component was automatically using "U" as the fallback for any messages from the user, which was not the intended behavior.
 
 ## Debugging:
+
+I then went ahead and added few debug statement to understand the behavior of data types. ![debug](https://ibb.co/9YV64qL). Here it shows an arbitrary number for user unique id so i decided to look into this enum.
+
 I checked the `uid` in the message data, which looked like this:
 ```ts
 export interface ITextItem {
