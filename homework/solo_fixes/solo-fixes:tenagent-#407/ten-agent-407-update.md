@@ -9,7 +9,7 @@ I tried changing the fallback text in the `AvatarFallback` to null or an empty s
 
 ## Debugging:
 
-I then went ahead and added few debug statement to understand the behavior of data types. [debug](https://ibb.co/9YV64qL). Here it shows an arbitrary number for user unique id so i decided to look into this enum.
+I then went ahead and added few debug statement to understand the behavior of data types. In chrome frontend, i was able to understand see user id as a data type which is [this]([https://ibb.co/9YV64qL](https://ibb.co/nLMqjqf)). Here it 0 as an agent id
 
 I checked the `uid` in the message data, which looked like this:
 ```ts
@@ -20,12 +20,12 @@ export interface ITextItem {
   isFinal: boolean;
 }
 ```
-I then went ahead, and assigned '1' to Agent as user id and added a conditional check in the `AvatarFallback` to show the avatar only if the `uid` is '1'. Making sure the avatar is shown only for Agent messages and not for User messages.
+I then went ahead, and assigned '1' to Agent as user id and added a conditional check in the `AvatarFallback` to show the avatar only if the `uid` is '0'. Making sure the avatar is shown only for Agent messages and not for User messages.
 
 Here is the code for the fix:
 
 ```
-const isAgent = data.uid === "1" // agent's uid is "1"
+const isAgent = data.uid === "0" // agent's uid is "0"
 
   return (
     <div
