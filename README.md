@@ -20,7 +20,7 @@ Hello! My name is Malik Salim and I'm currently a senior at Bennington College m
 ## 🤝 Group Fix
 Describe your group project contributions in 3-4 sentences, highlighting the process and what you learned.
 
-- For our group fix, Zahir, Ons, and I worked together to add degree centrality support to the RustworkX library.  In the beginning, we encountered a few challenges, including figuring out how to calculate the centrality of a directed graph and how to handle graphs with removed edges. The pull request for this feature can be found [here](https://github.com/Qiskit/rustworkx/pull/1306). (Merged)
+- For our group fix, [Zahir](https://github.com/Gohlub), [Ons](https://github.com/onsali), and I worked together to add degree centrality support to the RustworkX library.  In the beginning, we encountered a few challenges, including figuring out how to calculate the centrality of a directed graph and how to handle graphs with removed edges. The pull request for this feature can be found [here](https://github.com/Qiskit/rustworkx/pull/1306). (Merged)
 
 ---
 
