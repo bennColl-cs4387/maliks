@@ -9,7 +9,7 @@ Hello! My name is Malik Salim and I'm currently a senior at Bennington College m
 
 ---
 
-## 🛠️ List of Solo Fixes
+## 🛠️ Solo Fixes
 
 - Fixed case sensitivity issue with file types in the Python File Mover [code](https://github.com/AustinCGomez/Python-File-Mover), accepted in [this PR](https://github.com/AustinCGomez/Python-File-Mover/pull/60). (Merged)
 - Fixed a bug causing a stray 'U' to appear in the front-end for the TEN-Agent project [code](https://github.com/TEN-framework/TEN-Agent/), accepted in [this PR](https://github.com/TEN-framework/TEN-Agent/issues/407). (Merged)
