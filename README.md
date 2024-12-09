@@ -40,7 +40,7 @@ The second solo bug fix particularly stood out as a challenge and a learning exp
 
 While the course was rewarding, it was not without its hurdles. The first major challenge was setting up the initial environment for a large project. Dependency mismatches and versioning issues delayed progress at times. Another challenge was understanding large codebases. Many open-source projects lack extensive documentation, requiring time and effort to fully understand the codebase. I wish I had explored testing frameworks more thoroughly to enhance the reliability of my contributions through unit, integration, and end-to-end tests. 
 
-Moving forward, I would like to continue exploring open-source projects. In addition to continuing to contribute to the RustworkX library, I intend on contributing more to ML code spaces on top of Software Engineering. Again,I feel incredibly lucky to have had the opportunity to take this class as an undergraduate, as it has given me industry-similar experience and enhanced my github profile.
+Moving forward, I would like to continue exploring open-source projects. I intend on contributing more to Machine Learning code spaces on top of Software Engineering. Again, I feel incredibly lucky to have had the opportunity to take this class as an undergraduate, as it has given me industry-similar experience and enhanced my github profile.
 
 ## Class Resources
 
