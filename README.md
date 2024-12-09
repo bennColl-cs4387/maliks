@@ -13,7 +13,7 @@ Hello! My name is Malik Salim and I'm currently a senior at Bennington College m
 
 - Fixed case sensitivity issue with file types in the Python File Mover [code](https://github.com/AustinCGomez/Python-File-Mover), accepted in [this PR](https://github.com/AustinCGomez/Python-File-Mover/pull/60). (Merged)
 - Fixed a bug causing a stray 'U' to appear in the front-end for the TEN-Agent project [code](https://github.com/TEN-framework/TEN-Agent/), accepted in [this PR](https://github.com/TEN-framework/TEN-Agent/issues/407). (Merged)
-- Fixed a bug causing the text file to not be parsed into a PDF properly for the travelitinerary [code](https://github.com/gloriapul/travelitinerary/tree/pdf-fix).  The issue was that the text file was being read using UTF-8 encoding, which was causing the PDF to be empty.  I changed the encoding to Latin-1, which fixed the issue.(here)(https://ibb.co/Sc73zwL)
+- Fixed a bug causing the text file to not be parsed into a PDF properly for the travelitinerary [code](https://github.com/gloriapul/travelitinerary/tree/pdf-fix).  The issue was that the text file was being read using UTF-8 encoding, which was causing the PDF to be empty.  I changed the encoding to Latin-1, which fixed the issue.[here](https://ibb.co/Sc73zwL)
 
 ---
 
@@ -44,32 +44,8 @@ While the course was rewarding, it was not without its hurdles. The first major 
 
 Moving forward, I would like to continue exploring open-source projects. In addition to continuing to contribute to the RustworkX library, I intend on contributing more to ML code spaces on top of Software Engineering. Again,I feel incredibly lucky to have had the opportunity to take this class as an undergraduate, as it has given me industry-similar experience and enhanced my github profile.
 
+## Class Resources
 
+- [Syllabus](./homework/week3/syllabus.md)
+- [Schedule](./homework/week3/schedule.md)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Open Source Software in Practice (CS4387)
-
-Welcome to the repository for **Open Source Software in Practice (CS4387)**. This course focuses on collaborative programming practices and contributions to open-source software. Throughout the semester, we will engage with open-source projects by reading issues, evaluating code, and programming solutions.
-
-## Table of Contents
-
-- [Syllabus](./syllabus.md)
-- [Schedule](./schedule.md)
